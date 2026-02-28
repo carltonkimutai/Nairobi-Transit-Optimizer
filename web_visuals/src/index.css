@@ -1,0 +1,98 @@
+/* Import statements must come first */
+@import "tailwindcss";
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+@theme {
+  /* Define custom colors in Tailwind v4 format */
+  --color-dark-bg: #121212;
+  --color-dark-surface: #1e1e1e;
+  --color-dark-text: #e5e7eb;
+  --color-tier1: #3b82f6;
+  --color-tier2: #f59e0b;
+  --color-tier3: #8b5cf6;
+  --color-penalty: #ef4444;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  /* Create custom utility classes for our colors */
+  .bg-dark-bg {
+    background-color: var(--color-dark-bg);
+  }
+  .bg-dark-surface {
+    background-color: var(--color-dark-surface);
+  }
+  .text-dark-text {
+    color: var(--color-dark-text);
+  }
+  .text-tier1 {
+    color: var(--color-tier1);
+  }
+  .bg-tier1 {
+    background-color: var(--color-tier1);
+  }
+  .bg-tier1\/80 {
+    background-color: rgb(59 130 246 / 0.8);
+  }
+  .bg-tier1\/10 {
+    background-color: rgb(59 130 246 / 0.1);
+  }
+  .text-tier2 {
+    color: var(--color-tier2);
+  }
+  .bg-tier2 {
+    background-color: var(--color-tier2);
+  }
+  .bg-tier2\/80 {
+    background-color: rgb(245 158 11 / 0.8);
+  }
+  .bg-tier2\/10 {
+    background-color: rgb(245 158 11 / 0.1);
+  }
+  .border-tier2 {
+    border-color: var(--color-tier2);
+  }
+  .text-tier3 {
+    color: var(--color-tier3);
+  }
+  .bg-tier3 {
+    background-color: var(--color-tier3);
+  }
+  .text-penalty {
+    color: var(--color-penalty);
+  }
+  .bg-penalty {
+    background-color: var(--color-penalty);
+  }
+  .bg-penalty\/10 {
+    background-color: rgb(239 68 68 / 0.1);
+  }
+  .border-tier1 {
+    border-color: var(--color-tier1);
+  }
+  .border-penalty {
+    border-color: var(--color-penalty);
+  }
+  .bg-dark-bg\/50 {
+    background-color: rgb(18 18 18 / 0.5);
+  }
+  .hover\:bg-tier1\/80:hover {
+    background-color: rgb(59 130 246 / 0.8);
+  }
+  .hover\:text-dark-text:hover {
+    color: var(--color-dark-text);
+  }
+  .hover\:bg-dark-bg\/50:hover {
+    background-color: rgb(18 18 18 / 0.5);
+  }
+}
