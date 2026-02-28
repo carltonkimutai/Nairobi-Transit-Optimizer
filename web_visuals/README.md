@@ -175,5 +175,3 @@ Hours Saved Per Week = (Time Saved × 2 trips) × 6 days
 This project is built for urban planning analysis and socio-economic research.
 
 ---
-
-**Built with Claude Code CLI** | Analyzing Nairobi's Urban Transit Challenge
