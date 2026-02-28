@@ -2,7 +2,7 @@
 
 ## 📑 Project Roadmap
 *Structure of this ReadMe file:*
-* **Interactive Visualizations & Video:** Access to the final web application and a video walkthrough of the transit network.
+* **Interactive Visualizations & Video:** ( https://vercel.com/carltonkimutais-projects/nairobi-transit-optimizer ) Access to the final web application and a video walkthrough of the transit network.
 * **The Problem & Strategic Solution:** An overview of the "Spatial Mismatch" in Nairobi and the human-in-the-loop pipeline designed to solve it.
 * **Deep Analysis & Methodology:** A comprehensive technical breakdown of the three-stage spatial analytics and routing pipeline.
 * **System Integration & Data Flow:** A mapped architecture showing how data moves from raw APIs to web-ready dashboards.
